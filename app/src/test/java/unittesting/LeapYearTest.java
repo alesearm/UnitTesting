@@ -15,5 +15,13 @@ public void TeilenDurch100AberNichtDurch400 (){
     assertFalse(LeapYear.isLeapYear(2100)); // 2100 ist  durch 100 teilbar, aber nicht durch 400
     assertTrue(LeapYear.isLeapYear(2400)); // 2100 ist  durch 100 und durch 400 teilbar
 }
+
+@Test
+public void TeilenDurch100undDurch400 (){
+    assertTrue(LeapYear.isLeapYear(1600)); // 1600 ist  durch 400 teilbar und durch 400
+    assertTrue(LeapYear.isLeapYear(2000));
+}
+
+
 }
 
